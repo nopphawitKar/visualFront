@@ -1,0 +1,135 @@
+body {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+  /*position: relative;*/
+  overflow-y: visible;
+}
+
+.loader {
+  /*border: 16px solid #f3f3f3;*/
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: Loader-spin 2s linear infinite; /* Safari */
+  animation: Loader-spin 2s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes Loader-spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg) }
+  100% { transform: translate(-50%, -50%) rotate(360deg)}
+}
+
+.Quiz {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.footer {
+    /*position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;*/
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/*Plaintext*/
+.Table-cell {
+  background: orange;
+  border: 1px solid black;
+}
+
+.Question-title {
+  text-align: left;
+}
+
+.align-left {
+  text-align: left;
+}
+
+/*indenttree*/
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+/*.indenttreeGraph{
+  border: 1px solid black;
+}*/
+svg{
+  border: 1px solid black;
+}
